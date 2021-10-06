@@ -1,4 +1,210 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R_Small R1
+U 1 1 615DA9B2
+P 5100 3500
+F 0 "R1" H 5159 3546 50  0000 L CNN
+F 1 "470R" H 5150 3450 50  0000 L CNN
+F 2 "" H 5100 3500 50  0001 C CNN
+F 3 "~" H 5100 3500 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 615DA9B8
+P 5600 3500
+F 0 "R2" H 5659 3546 50  0000 L CNN
+F 1 "47k" H 5659 3455 50  0000 L CNN
+F 2 "" H 5600 3500 50  0001 C CNN
+F 3 "~" H 5600 3500 50  0001 C CNN
+	1    5600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 615DA9BE
+P 6100 3500
+F 0 "R3" H 6159 3546 50  0000 L CNN
+F 1 "47k" H 6159 3455 50  0000 L CNN
+F 2 "" H 6100 3500 50  0001 C CNN
+F 3 "~" H 6100 3500 50  0001 C CNN
+	1    6100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 615DA9C4
+P 6600 3500
+F 0 "R4" H 6659 3546 50  0000 L CNN
+F 1 "470R" H 6659 3455 50  0000 L CNN
+F 2 "" H 6600 3500 50  0001 C CNN
+F 3 "~" H 6600 3500 50  0001 C CNN
+	1    6600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery BT1
+U 1 1 615DA9CA
+P 4600 3350
+F 0 "BT1" H 4708 3396 50  0000 L CNN
+F 1 "9V" H 4708 3305 50  0000 L CNN
+F 2 "" V 4600 3410 50  0001 C CNN
+F 3 "~" V 4600 3410 50  0001 C CNN
+	1    4600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 615DA9D0
+P 5100 3100
+F 0 "D1" V 5139 2982 50  0000 R CNN
+F 1 "LED" V 5048 2982 50  0000 R CNN
+F 2 "" H 5100 3100 50  0001 C CNN
+F 3 "~" H 5100 3100 50  0001 C CNN
+	1    5100 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 615DA9D6
+P 6600 3100
+F 0 "D2" V 6639 2982 50  0000 R CNN
+F 1 "LED" V 6548 2982 50  0000 R CNN
+F 2 "" H 6600 3100 50  0001 C CNN
+F 3 "~" H 6600 3100 50  0001 C CNN
+	1    6600 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 615DA9DC
+P 5350 3750
+F 0 "C1" V 5300 3900 50  0000 C CNN
+F 1 "47uF" V 5300 3600 50  0000 C CNN
+F 2 "" H 5350 3750 50  0001 C CNN
+F 3 "~" H 5350 3750 50  0001 C CNN
+	1    5350 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 615DA9E2
+P 6400 3750
+F 0 "C2" V 6450 3850 50  0000 C CNN
+F 1 "47uF" V 6450 3600 50  0000 C CNN
+F 2 "" H 6400 3750 50  0001 C CNN
+F 3 "~" H 6400 3750 50  0001 C CNN
+	1    6400 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L New_Library:CA3086 U1
+U 1 1 615DC093
+P 5900 4450
+F 0 "U1" V 5946 4022 50  0000 R CNN
+F 1 "CA3086" V 5855 4022 50  0000 R CNN
+F 2 "" H 5900 4400 50  0001 C CNN
+F 3 "" H 5900 4400 50  0001 C CNN
+	1    5900 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 2950 5100 2850
+Wire Wire Line
+	5100 2850 5600 2850
+Wire Wire Line
+	6600 2850 6600 2950
+Wire Wire Line
+	5100 3250 5100 3400
+Wire Wire Line
+	6600 3250 6600 3400
+Connection ~ 5600 2850
+Wire Wire Line
+	5600 2850 6100 2850
+Wire Wire Line
+	6100 3400 6100 2850
+Connection ~ 6100 2850
+Wire Wire Line
+	6100 2850 6600 2850
+Wire Wire Line
+	5200 3750 5100 3750
+Wire Wire Line
+	5100 3750 5100 3600
+Wire Wire Line
+	5600 3600 5600 3750
+Wire Wire Line
+	5600 3750 5500 3750
+Wire Wire Line
+	6100 3600 6100 3750
+Wire Wire Line
+	6100 3750 6250 3750
+Wire Wire Line
+	6550 3750 6600 3750
+Wire Wire Line
+	6600 3750 6600 3600
+Wire Wire Line
+	5800 4100 5800 3750
+Wire Wire Line
+	5800 3750 6100 3750
+Connection ~ 6100 3750
+Wire Wire Line
+	5600 3750 5600 3900
+Wire Wire Line
+	5600 3900 6100 3900
+Wire Wire Line
+	6100 3900 6100 4100
+Connection ~ 5600 3750
+Wire Wire Line
+	5600 4100 5100 4100
+Wire Wire Line
+	5100 4100 5100 3750
+Connection ~ 5100 3750
+Wire Wire Line
+	6000 4100 6000 4000
+Wire Wire Line
+	6000 4000 5700 4000
+Wire Wire Line
+	5700 4100 5700 4000
+Connection ~ 5700 4000
+Wire Wire Line
+	4600 4000 4600 3550
+Wire Wire Line
+	4600 4000 5700 4000
+Wire Wire Line
+	4600 3150 4600 2850
+Wire Wire Line
+	4600 2850 5100 2850
+Connection ~ 5100 2850
+Wire Wire Line
+	5900 4100 5900 3950
+Wire Wire Line
+	5900 3950 6600 3950
+Wire Wire Line
+	6600 3950 6600 3750
+Connection ~ 6600 3750
+NoConn ~ 6200 4100
+NoConn ~ 5600 4800
+NoConn ~ 5700 4800
+NoConn ~ 5800 4800
+NoConn ~ 5900 4800
+NoConn ~ 6000 4800
+NoConn ~ 6100 4800
+NoConn ~ 6200 4800
+Wire Wire Line
+	5600 2850 5600 3400
 $EndSCHEMATC
