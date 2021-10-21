@@ -1,0 +1,104 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1750 3250 1100 800 
+U 616684D9
+F0 "220AC_to_15DC" 50
+F1 "220AC_to_15DC.sch" 50
+F2 "VCC" I R 2850 3500 50 
+F3 "GND" I R 2850 3800 50 
+F4 "220V_AC(+)" I L 1750 3550 50 
+F5 "220V_AC(-)" I L 1750 3700 50 
+$EndSheet
+$Sheet
+S 3600 1650 1100 800 
+U 6167156A
+F0 "3.3V_stabilizesana" 50
+F1 "file61671569.sch" 50
+F2 "VCC" I L 3600 1900 50 
+F3 "GND" I L 3600 2200 50 
+F4 "3,3V" I R 4700 2050 50 
+$EndSheet
+$Sheet
+S 3600 2700 1100 800 
+U 61672735
+F0 "5V_stabilizesana" 50
+F1 "file61672734.sch" 50
+F2 "VCC" I L 3600 2950 50 
+F3 "GND" I L 3600 3250 50 
+F4 "5V" I R 4700 3100 50 
+$EndSheet
+$Sheet
+S 3600 3750 1100 800 
+U 616728B7
+F0 "9V_stabilizesana" 50
+F1 "file616728B6.sch" 50
+F2 "VCC" I L 3600 4000 50 
+F3 "GND" I L 3600 4300 50 
+F4 "9V" I R 4700 4150 50 
+$EndSheet
+$Sheet
+S 3600 4800 1100 800 
+U 6167294A
+F0 "12V_stabilizesana" 50
+F1 "file61672949.sch" 50
+F2 "VCC" I L 3600 5050 50 
+F3 "GND" I L 3600 5350 50 
+F4 "+12V" I R 4700 5200 50 
+$EndSheet
+Wire Wire Line
+	3600 1900 3450 1900
+Wire Wire Line
+	3450 1900 3450 2950
+Wire Wire Line
+	3450 2950 3600 2950
+Wire Wire Line
+	3450 2950 3450 3500
+Wire Wire Line
+	3450 4000 3600 4000
+Connection ~ 3450 2950
+Wire Wire Line
+	3450 4000 3450 5050
+Wire Wire Line
+	3450 5050 3600 5050
+Connection ~ 3450 4000
+Wire Wire Line
+	3600 4300 3350 4300
+Wire Wire Line
+	3350 4300 3350 5350
+Wire Wire Line
+	3350 5350 3600 5350
+Wire Wire Line
+	3350 4300 3350 3800
+Wire Wire Line
+	3350 3250 3600 3250
+Connection ~ 3350 4300
+Wire Wire Line
+	3350 3250 3350 2200
+Wire Wire Line
+	3350 2200 3600 2200
+Connection ~ 3350 3250
+Wire Wire Line
+	2850 3800 3350 3800
+Connection ~ 3350 3800
+Wire Wire Line
+	3350 3800 3350 3250
+Wire Wire Line
+	2850 3500 3450 3500
+Connection ~ 3450 3500
+Wire Wire Line
+	3450 3500 3450 4000
+$EndSCHEMATC

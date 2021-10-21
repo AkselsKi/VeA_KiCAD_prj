@@ -1,0 +1,183 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Regulator_Switching:TPS56339DDC U2
+U 1 1 6170438D
+P 5800 3450
+F 0 "U2" H 5800 3817 50  0000 C CNN
+F 1 "TPS56339DDC" H 5800 3726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 5850 3200 50  0001 L CNN
+F 3 "https://www.ti.com/lit/ds/symlink/tps56339.pdf" H 5800 3450 50  0001 C CNN
+	1    5800 3450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5400 3550
+$Comp
+L Device:C_Small C5
+U 1 1 617049D9
+P 5050 3550
+F 0 "C5" H 4958 3504 50  0000 R CNN
+F 1 "100n" H 4958 3595 50  0000 R CNN
+F 2 "" H 5050 3550 50  0001 C CNN
+F 3 "~" H 5050 3550 50  0001 C CNN
+	1    5050 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 61705654
+P 4750 3550
+F 0 "C4" H 4658 3504 50  0000 R CNN
+F 1 "10n" H 4658 3595 50  0000 R CNN
+F 2 "" H 4750 3550 50  0001 C CNN
+F 3 "~" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 3750 4750 3750
+Wire Wire Line
+	4550 3350 4750 3350
+Wire Wire Line
+	5050 3650 5050 3750
+Connection ~ 5050 3750
+Wire Wire Line
+	5050 3750 5800 3750
+Wire Wire Line
+	5050 3450 5050 3350
+Connection ~ 5050 3350
+Wire Wire Line
+	5050 3350 5400 3350
+Wire Wire Line
+	4750 3450 4750 3350
+Connection ~ 4750 3350
+Wire Wire Line
+	4750 3350 5050 3350
+Wire Wire Line
+	4750 3650 4750 3750
+Connection ~ 4750 3750
+Wire Wire Line
+	4750 3750 5050 3750
+$Comp
+L Device:C_Small C6
+U 1 1 61706F5F
+P 6800 3450
+F 0 "C6" V 6850 3300 50  0000 C CNN
+F 1 "100n" V 6750 3300 50  0000 C CNN
+F 2 "" H 6800 3450 50  0001 C CNN
+F 3 "~" H 6800 3450 50  0001 C CNN
+	1    6800 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 6170725C
+P 8350 3550
+F 0 "C7" H 8258 3504 50  0000 R CNN
+F 1 "22u" H 8258 3595 50  0000 R CNN
+F 2 "" H 8350 3550 50  0001 C CNN
+F 3 "~" H 8350 3550 50  0001 C CNN
+	1    8350 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 6170741B
+P 6450 3450
+F 0 "R2" V 6400 3600 50  0000 C CNN
+F 1 "30R" V 6500 3600 50  0000 C CNN
+F 2 "" H 6450 3450 50  0001 C CNN
+F 3 "~" H 6450 3450 50  0001 C CNN
+	1    6450 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61707B6F
+P 7800 3450
+F 0 "R3" H 7859 3496 50  0000 L CNN
+F 1 "102k" H 7859 3405 50  0000 L CNN
+F 2 "" H 7800 3450 50  0001 C CNN
+F 3 "~" H 7800 3450 50  0001 C CNN
+	1    7800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 61707D6E
+P 7800 3650
+F 0 "R4" H 7859 3696 50  0000 L CNN
+F 1 "10k" H 7859 3605 50  0000 L CNN
+F 2 "" H 7800 3650 50  0001 C CNN
+F 3 "~" H 7800 3650 50  0001 C CNN
+	1    7800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 61707F9E
+P 7350 3350
+F 0 "L1" H 7350 3565 50  0000 C CNN
+F 1 "6,5u" H 7350 3474 50  0000 C CNN
+F 2 "" H 7350 3350 50  0001 C CNN
+F 3 "~" H 7350 3350 50  0001 C CNN
+	1    7350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3350 6900 3350
+Wire Wire Line
+	6200 3450 6350 3450
+Wire Wire Line
+	6550 3450 6700 3450
+Wire Wire Line
+	6900 3450 6900 3350
+Connection ~ 6900 3350
+Wire Wire Line
+	6900 3350 6200 3350
+Wire Wire Line
+	6200 3550 7800 3550
+Wire Wire Line
+	7800 3350 7600 3350
+Connection ~ 7800 3550
+Wire Wire Line
+	7800 3750 5800 3750
+Connection ~ 5800 3750
+Wire Wire Line
+	7800 3350 8350 3350
+Connection ~ 7800 3350
+Wire Wire Line
+	7800 3750 8350 3750
+Connection ~ 7800 3750
+Wire Wire Line
+	8350 3450 8350 3350
+Connection ~ 8350 3350
+Wire Wire Line
+	8350 3350 8500 3350
+Wire Wire Line
+	8350 3650 8350 3750
+Connection ~ 8350 3750
+Wire Wire Line
+	8350 3750 8500 3750
+Text HLabel 4550 3350 0    50   Input ~ 0
+VCC
+Text HLabel 4550 3750 0    50   Input ~ 0
+GND
+Text HLabel 8500 3750 2    50   Input ~ 0
+GND
+Text HLabel 8500 3350 2    50   Input ~ 0
+9V
+$EndSCHEMATC
