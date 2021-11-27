@@ -69,28 +69,6 @@ F 3 "https://www.farnell.com/datasheets/2860633.pdf" H 6450 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Q_NPN_BCE Q1
-U 1 1 61803CD7
-P 6350 2600
-F 0 "Q1" H 6541 2646 50  0000 L CNN
-F 1 "BC546" H 6541 2555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 6550 2700 50  0001 C CNN
-F 3 "~" H 6350 2600 50  0001 C CNN
-	1    6350 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Q_NPN_BCE Q2
-U 1 1 61804A5F
-P 7650 2600
-F 0 "Q2" H 7841 2646 50  0000 L CNN
-F 1 "BC546" H 7841 2555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 7850 2700 50  0001 C CNN
-F 3 "~" H 7650 2600 50  0001 C CNN
-	1    7650 2600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C2
 U 1 1 61804DB2
 P 6900 3100
@@ -235,28 +213,6 @@ F 3 "https://www.farnell.com/datasheets/2968681.pdf" H 5650 2600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5900 2600 5750 2600
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 618286F2
-P 8550 2900
-F 0 "J2" H 8630 2846 50  0000 L CNN
-F 1 "Conn_01x02" H 8630 2801 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8550 2900 50  0001 C CNN
-F 3 "~" H 8550 2900 50  0001 C CNN
-	1    8550 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 61829940
-P 5250 2700
-F 0 "J1" H 5400 2650 50  0000 C CNN
-F 1 "Conn_01x02" H 5330 2601 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5250 2700 50  0001 C CNN
-F 3 "~" H 5250 2700 50  0001 C CNN
-	1    5250 2700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8250 2900 8350 2900
 Wire Wire Line
@@ -271,4 +227,81 @@ Wire Wire Line
 Wire Wire Line
 	5450 3200 5900 3200
 Connection ~ 5900 3200
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 61A11392
+P 8550 2350
+F 0 "J2" H 8630 2342 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 8630 2251 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8550 2350 50  0001 C CNN
+F 3 "~" H 8550 2350 50  0001 C CNN
+	1    8550 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 61A1219C
+P 8550 2900
+F 0 "J3" H 8630 2892 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 8630 2801 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 8550 2900 50  0001 C CNN
+F 3 "~" H 8550 2900 50  0001 C CNN
+	1    8550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61A12F31
+P 5250 2700
+F 0 "J1" H 5168 2375 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 5168 2466 50  0000 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 5250 2700 50  0001 C CNN
+F 3 "~" H 5250 2700 50  0001 C CNN
+	1    5250 2700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q2
+U 1 1 61A185CC
+P 7650 2600
+F 0 "Q2" H 7841 2646 50  0000 L CNN
+F 1 "BC546" H 7841 2555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 7850 2700 50  0001 C CNN
+F 3 "~" H 7650 2600 50  0001 C CNN
+	1    7650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Q_NPN_CBE Q1
+U 1 1 61A190D5
+P 6350 2600
+F 0 "Q1" H 6541 2646 50  0000 L CNN
+F 1 "BC546" H 6541 2555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92L_Inline" H 6550 2700 50  0001 C CNN
+F 3 "~" H 6350 2600 50  0001 C CNN
+	1    6350 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR01
+U 1 1 61A13F4D
+P 8350 2450
+F 0 "#PWR01" H 8350 2300 50  0001 C CNN
+F 1 "+9V" H 8365 2623 50  0000 C CNN
+F 2 "" H 8350 2450 50  0001 C CNN
+F 3 "" H 8350 2450 50  0001 C CNN
+	1    8350 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDREF #PWR02
+U 1 1 61A1370D
+P 8350 2350
+F 0 "#PWR02" H 8350 2100 50  0001 C CNN
+F 1 "GNDREF" H 8355 2177 50  0000 C CNN
+F 2 "" H 8350 2350 50  0001 C CNN
+F 3 "" H 8350 2350 50  0001 C CNN
+	1    8350 2350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
